@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_red"
+            android:minHeight="?attr/actionBarSize"
+            android:fontFamily="@font/berkshire_swash"
+            android:theme="?attr/actionBarTheme" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/mainPageButton"
+                android:layout_marginLeft="15dp"
+                android:layout_width="40dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:background="@drawable/round_btn_with_appred"
+                app:srcCompat="@drawable/home_button"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:layout_margin="20dp">
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView"
+                    app:defaultQueryHint="Search News..."
+                    app:iconifiedByDefault="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+                </androidx.appcompat.widget.SearchView>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/button_sports"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/round_btn"
+                android:clickable="true"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="65dp"
+                tools:layout_editor_absoluteY="82dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/sports"
+                    android:textAlignment="center"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sports"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_health"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/round_btn"
+                android:clickable="true"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="65dp"
+                tools:layout_editor_absoluteY="82dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/health"
+                    android:textAlignment="center"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Health"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_science"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/round_btn"
+                android:clickable="true"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="65dp"
+                tools:layout_editor_absoluteY="82dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/science"
+                    android:textAlignment="center"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Science"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/button_entertainment"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/round_btn"
+                android:clickable="true"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="65dp"
+                tools:layout_editor_absoluteY="82dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="19dp"
+                    android:src="@drawable/entertainment"
+                    android:textAlignment="center"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Entertainment"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_business"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/round_btn"
+                android:clickable="true"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="65dp"
+                tools:layout_editor_absoluteY="82dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/business"
+                    android:textAlignment="center"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Business"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_technology"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/round_btn"
+                android:clickable="true"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="65dp"
+                tools:layout_editor_absoluteY="82dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/technology"
+                    android:textAlignment="center"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Technology"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Todays Popular News"
+            android:textColor="@color/black"
+            android:textSize="25dp"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/app_red" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/news_recylerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

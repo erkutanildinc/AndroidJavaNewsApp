@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">NewApplication</string>
+    <string name="api_key">9fb6776c645d448bb7c9142ec34b495d</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
