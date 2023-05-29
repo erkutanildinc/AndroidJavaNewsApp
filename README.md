@@ -1,5 +1,5 @@
 
-## NewsApplication
+## Android Java News Application
 
 A news application that lists news with the help of retrofit and user authentication processes with Firebase
   
